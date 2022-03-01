@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	log.Printf("%s, Plz!", greetings.Greeting())
+	log.Printf("%s, World!", greetings.Greeting())
 }
