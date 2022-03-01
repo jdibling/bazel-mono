@@ -2,3 +2,6 @@ bazel-bin
 bazel-mono
 bazel-out
 bazel-testlogs
+# Entries below this point are managed by Please (DO NOT EDIT)
+plz-out
+.plzconfig.local

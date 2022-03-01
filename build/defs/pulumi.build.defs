@@ -1,0 +1,10 @@
+def pulumi(name:str, cmd:str, args:lis) -> str:
+    return genrule(
+        name = name,
+        srcs = {
+            "cmd": [cmd],
+            "args": args,
+        },
+        outs = [f"{name}.pulumi"],
+        cmd = "pulumi $SRCS_CMD $SRCS_ARGS > $OUT",
+    )
